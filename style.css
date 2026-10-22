@@ -296,10 +296,12 @@ body.loading { overflow: hidden; }
 @keyframes lddots { 0% { content: ""; } 25% { content: "."; } 50% { content: ".."; } 75%, 100% { content: "..."; } }
 
 @media (max-width: 640px) {
-  .contact-card { gap: 12px; }
-  .c-ico { width: 44px; height: 44px; }
+  .contact-card { padding: 16px !important; gap: 10px !important; }
+  .c-ico { width: 40px !important; height: 40px !important; }
   .contact-card .value {
-    font-size: clamp(.78rem, 3.6vw, .95rem);
-    white-space: nowrap;
+    font-size: 3.3vw !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
   }
 }
